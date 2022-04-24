@@ -1,0 +1,21 @@
+{ 
+    "name": "sitisit/mobile-notify", 
+    "description": "Отпавка уведомлеий через sms и месседже", 
+    "type": "library", 
+    "require": { 
+      "php": ">=7.4" 
+    }, 
+    "license": "proprietary", 
+    "авторы": [ 
+      { 
+        "name": "Kiryanov Danila", 
+        "email": "danila@sitisit.ru" 
+      } 
+    ], 
+    "minimum-stability": "dev",
+    "autoload": { 
+        "psr-4": { 
+          "MobileNotify\\": "MobileNotify/Notify" 
+        }
+  }
+}
