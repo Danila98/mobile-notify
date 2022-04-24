@@ -1,5 +1,5 @@
 <?
-namespace Lib\Response;
+namespace MobileNotify\Lib\Response;
 class SendResponse
 {
     protected bool $status;

@@ -1,5 +1,5 @@
 <? 
-namespace Lib\Response;
+namespace MobileNotify\Lib\Response;
 
 class SendAttempt
 {

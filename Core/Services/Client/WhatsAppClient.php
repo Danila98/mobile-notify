@@ -1,6 +1,6 @@
 <?
-namespace Core\Services\Client;
-use Core\Services\Client\IClient;
+namespace MobileNotify\Core\Services\Client;
+use MobileNotify\Core\Services\Client\IClient;
 use Lib\Response\SendAttempt;
 
 class WhatsAppClient implements IClient

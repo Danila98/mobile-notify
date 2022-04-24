@@ -1,5 +1,5 @@
 <?
-namespace Lib\DataAdapter;
+namespace MobileNotify\Lib\DataAdapter;
 use Lib\Response\SendResponse;
 
 class SendResponseAdapter

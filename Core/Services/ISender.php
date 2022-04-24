@@ -1,6 +1,6 @@
 <?
 
-namespace Core\Services; 
+namespace MobileNotify\Core\Services; 
 use Core\Services\Client\IClient;
 
 interface ISender

@@ -1,5 +1,5 @@
 <?
-namespace Core\Services\Client;
+namespace MobileNotify\Core\Services\Client;
 use Lib\Response\SendAttempt;
 interface IClient
 {
