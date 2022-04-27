@@ -25,32 +25,13 @@ $result = $sender->send($model->message, $model->number);
 В ответ вы получите результат подобного вида
 ~~~
 {
-"status": true,
-"service": "sms",
-"log": [
-    {"service": ""viber", "status": false},
-    {"service": ""whatsapp", "status": false},
-    {"service": ""sms", "status": true},
-]
+    "status": true,
+    "service": "sms",
+    "log": [
+        {"service": ""viber", "status": false},
+        {"service": ""whatsapp", "status": false},
+        {"service": ""sms", "status": true},
+    ]
 }
 
-
-{
-"status": false,
-"service": "sms",
-"log": [
-    {"service": ""viber", "status": false},
-    {"service": ""whatsapp", "status": false},
-    {"service": ""sms", "status": false},
-]
-}
-
-
-{
-"status": true,
-"service": "viber",
-"log": [
-{"service": ""viber", "status": true},
-]
-}
 ~~~
