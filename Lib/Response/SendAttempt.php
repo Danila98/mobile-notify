@@ -1,4 +1,4 @@
-<? 
+<?php
 namespace MobileNotify\Lib\Response;
 
 class SendAttempt

@@ -1,5 +1,4 @@
-<?
-
+<?php
 namespace MobileNotify\Core\Services;
 use MobileNotify\Core\Services\Client\SmsRuClient;
 use MobileNotify\Core\Services\Client\ViberClient;

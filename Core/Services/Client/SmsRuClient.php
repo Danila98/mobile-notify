@@ -1,4 +1,4 @@
-<?
+<?php
 namespace MobileNotify\Core\Services\Client; 
 use MobileNotify\Lib\SmsRu\SMSRU;
 use MobileNotify\Lib\Response\SendAttempt;

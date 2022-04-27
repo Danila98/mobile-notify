@@ -1,4 +1,4 @@
-<?
+<?php
 namespace MobileNotify\Lib\DataAdapter;
 use MobileNotify\Lib\Response\SendResponse;
 
