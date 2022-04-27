@@ -1,12 +1,12 @@
 <?
 namespace MobileNotify\Core\Services\Client;
 use MobileNotify\Core\Services\Client\IClient;
-use Lib\Response\SendAttempt;
+use MobileNotify\Lib\Response\SendAttempt;
 
 class WhatsAppClient implements IClient
 {
-    protected $token;
-    protected $instanceId;
+    protected string $token;
+    protected string $instanceId;
 
     public function __construct(string $token, string $instanceId)
     {

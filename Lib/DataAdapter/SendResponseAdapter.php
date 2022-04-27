@@ -1,6 +1,6 @@
 <?
 namespace MobileNotify\Lib\DataAdapter;
-use Lib\Response\SendResponse;
+use MobileNotify\Lib\Response\SendResponse;
 
 class SendResponseAdapter
 {

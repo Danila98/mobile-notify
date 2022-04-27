@@ -1,16 +1,16 @@
 <?
-namespace Core\Services; 
-use Core\Services\Client\ViberClient;
-use Core\Services\Client\SmsRuClient;
-use Core\Services\Client\WhatsAppClient;
-use Lib\DataAdapter\SendResponseAdapter;
-use Lib\Response\SendResponse;
+namespace MobileNotify\Core\Services;
+use MobileNotify\Core\Services\Client\ViberClient;
+use MobileNotify\Core\Services\Client\SmsRuClient;
+use MobileNotify\Core\Services\Client\WhatsAppClient;
+use MobileNotify\Lib\DataAdapter\SendResponseAdapter;
+use MobileNotify\Lib\Response\SendResponse;
 
-class Sender extends ISender
+class Sender implements ISender
 {
-    protected $smsClient;
-    protected $whatsAppClient;
-    protected $viberClient;
+    protected ?SmsRuClient $smsClient;
+    protected ?WhatsAppClient $whatsAppClient;
+    protected ?ViberClient $viberClient;
 
     public function __construct(ViberClient $viberClient = null, WhatsAppClient $whatsAppClient = null, SmsRuClient $smsClient = null)
     {

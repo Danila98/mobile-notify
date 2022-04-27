@@ -1,6 +1,6 @@
 <?
 namespace MobileNotify\Core\Services\Client;
-use Lib\Response\SendAttempt;
+use MobileNotify\Lib\Response\SendAttempt;
 interface IClient
 {
     public function getTypeMethod() : string;

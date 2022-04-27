@@ -1,12 +1,12 @@
 <? 
 namespace MobileNotify\Core\Services\Client;
-use Lib\Response\SendAttempt;
+use MobileNotify\Lib\Response\SendAttempt;
 
 class ViberClient implements IClient
 {
-    private $url_api = "https://chatapi.viber.com/pa/";
-    private $from;
-    private $token;
+    private string $url_api = "https://chatapi.viber.com/pa/";
+    private string $from;
+    private string $token;
 
     public function __construct(string $token, string $adminId)
     {
@@ -41,7 +41,8 @@ class ViberClient implements IClient
         /**
          * Условие надо уточнить из результата запроса
          */
-        if($response)
+      $response = json_decode($response);
+        if($response['status'] == "OK")
         {
             return new SendAttempt(true, $this->getTypeMethod());
         }else

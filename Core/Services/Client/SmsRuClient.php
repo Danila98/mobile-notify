@@ -1,7 +1,7 @@
 <?
 namespace MobileNotify\Core\Services\Client; 
-use Lib\SmsRu\SMSRU;
-use Lib\Response\SendAttempt;
+use MobileNotify\Lib\SmsRu\SMSRU;
+use MobileNotify\Lib\Response\SendAttempt;
 
 class SmsRuClient implements IClient
 {
