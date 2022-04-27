@@ -2,9 +2,9 @@
 namespace MobileNotify\Lib\Response;
 class SendResponse
 {
-    protected bool $status;
-    protected string $service;
-    protected array $logs;
+    protected $status;
+    protected $service;
+    protected $logs;
 
     public function setStatus(bool $status)
     {

@@ -28,8 +28,6 @@ class SmsRuClient implements IClient
         $sms = $smsru->send_one($data); // Отправка сообщения и возврат данных в переменную
 
         if ($sms->status == "OK") { // Запрос выполнен успешно
-            $sms->sms_id;
-            $sms->balance;
             return new SendAttempt(true, $this->getTypeMethod());
         } else {
             return new SendAttempt(false, $this->getTypeMethod());
